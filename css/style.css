@@ -21,9 +21,9 @@
     --color-bg1: #2f3267;
     --color-bg2: #424890;
     
-    --container-width-lg: 76%
-    --container-width-md: 90%
-    --container-width-sm: 94%
+    --container-width-lg: 86%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
 
     --transition: all 400ms ease;
 }
@@ -151,7 +151,7 @@ header {
 
 .header_container {
     display: grid;
-    grid-template-colums: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 5rem;
     height: 100%;
