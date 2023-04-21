@@ -21,7 +21,7 @@
     --color-bg1: #2f3267;
     --color-bg2: #424890;
     
-    --container-width-lg: 76%;
+    --container-width-lg: 80%;
     --container-width-md: 90%;
     --container-width-sm: 94%;
 
@@ -34,6 +34,14 @@ body {
     color: var(--color-white);
     background: var(--color-bg);
 }
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
 
 .container {
     width: var(--container-width-lg);
@@ -171,7 +179,7 @@ header {
 
 .categories {
     background: var(--color-bg1);
-    height: 29rem;
+    height: 32rem;
 }
 
 .categories h1 {
@@ -182,11 +190,7 @@ header {
 .categories_container {
     display: grid;
     grid-template-columns: 40% 60%;
-  /*  gap: 4rem;  */
-}
-
-.categoires_left {
-    margin-right: 4rem;
+    gap: 4rem;  
 }
 
 .categoires_left p {
@@ -220,11 +224,11 @@ header {
 }
 
 .category:nth-child(4) .category__icon {
-    background: var(--color-warning);
+    background: var(--color-success);
 }
 
 .category:nth-child(5) .category__icon {
-    background: var(--color-danger-variant);
+    background: var(--color-success);
 }
 
 .category__ icon {
@@ -318,7 +322,7 @@ header {
 
 /*  ========================== TESTMONIALS ======================== */
 
-.testmonials_container {
+.testimonials_container {
     overflow-x: hidden;
     position: relative;
     margin-bottom: 5rem;
@@ -337,17 +341,18 @@ header {
     border: 1rem solid var(--color-bg1)
 }
 
-.testmonial_info {
+.testimonial_info {
     text-align: center;
 }
 
-.testmonial_body {
+.testimonial_body {
     background: var(--color-primary);
     padding: 2rem;
     margin-top: 3rem;
+    position: relative;
 }
 
-.testmonial_body::before {
+.testimonial_body::before {
     content: "";
     display: block;
     background: linear-gradient(
@@ -407,4 +412,72 @@ footer ul li a:hover {
     margin-top: 4rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--color-bg2);
+}
+
+/* =============== MEDIA QUERIES (TABLETS) ================*/
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    h1 {
+        font-size: 2.2rem;;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /*=================== NAVBAR ==========================*/
+    
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav_menu li {
+        width: 100%;
+        height: 5.8rem;
+    }
+
+    .nav_menu li a {
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: gird;
+        place-items: center;
+    }
+
+    .nav_menu li a:hover {
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
 }
