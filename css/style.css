@@ -480,4 +480,128 @@ footer ul li a:hover {
         background: var(--color-bg2);
         color: var(--color-white);
     }
+
+ /*=================== HEADER ==========================*/
+
+ header {
+    height: 52vh;
+    margin-bottom: 4rem;
+ }
+
+ .header_container {
+    gap: 0;
+    padding-bottom: 3rem;
+ }
+
+/*=================== CATEGORIES ==========================*/
+
+.categories {
+    height: auto;
 }
+
+.categories_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.categories_left {
+    margin-right: 0;
+}
+
+/*=================== POPULAR COURSES ==========================*/
+.courses {
+    margin-top: 0;
+}
+
+.courses_container {
+    grid-template-columns: 1fr 1fr;
+}
+
+/*=================== FAQs ==========================*/
+
+.faqs_container {
+    grid-template-columns: 1fr;
+}
+
+.faq{
+    padding: 1.5rem;
+}
+
+/*=================== FOOTER ==========================*/
+
+.footer_container {
+    grid-template-columns: 1fr 1r;
+}
+
+/*=================== MEDIA QUERIES (PHONES) ==========================*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+/*=================== NAVBAR ==========================*/
+.nav_menu {
+    right: 3%;
+}
+
+/*=================== HEADER ==========================*/
+header {
+    height: 100vh;
+}
+
+.header_container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+}
+
+.header_left p {
+    margin-bottom: 1.3;
+}
+
+/*=================== CATEGORIES ==========================*/
+.categories_right {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+}
+
+.category {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.categort_icon {
+    margin-top: 4px;
+    display: inline-block;
+}
+
+/*=================== POPULAR COURSES ==========================*/
+.courses_container {
+    grid-template-columns: 1fr;
+}
+
+/*=================== TESTIMONIALS ==========================*/
+.testimonial_body {
+    padding: 1.2rem;
+}
+
+/*=================== FOOTER ==========================*/
+.footer_container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+}
+
+.footer_1 p {
+    margin: 1rem auto;
+}
+
+.footer_socials {
+    justify-content: center;
+}
+
+ }
+}
+
+
+
